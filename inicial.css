@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    background: #ffffff;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.cor-direita {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 180px;
+    height: 100%;
+    background: linear-gradient(to right, #ffffff, #ff9100, #0e6b21);
+}
+
+header * {
+    position: relative;
+    z-index: 1;
+}
+
+.menu-esq {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-esq img {
+    width: 45px;
+}
+
+.menu-esq a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #000;
+    font-weight: bold;
+}
+
+.menu-dir {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.mensagem-site {
+    width: 100%;
+    background: #ffe4c2;
+    text-align: center;
+    padding: 12px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #000;
+}
+
+.card {
+    width: 60%;
+    max-width: 850px;
+    background: #f0f0f0;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card img {
+    width: 45%;
+    margin: 15px auto;
+    display: block;
+}
+
+.botoes-card {
+    margin-top: 15px;
+}
+
+.botoes-card a {
+    text-decoration: none;
+    padding: 8px 15px;
+    background: white;
+    border: 1px solid #000;
+    color: #000;
+    font-size: 12px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.suporte-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+    background: #f3f3f3;
+    margin-top: 40px;
+}
+
+.suporte-card {
+    text-decoration: none;
+    color: #000;
+    width: 180px;
+    text-align: center;
+    transition: 0.2s ease;
+}
+
+.suporte-card img {
+    width: 45px;
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+
+.suporte-card h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.suporte-card p {
+    font-size: 11px;
+    color: #555;
+}
+
+.suporte-card:hover {
+    transform: translateY(-4px);
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange Store - Layout Completo</title>
+    <link rel="stylesheet" href="loja.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #ffffff;
+        }
+
+        header {
+            width: 100%;
+            background: #ffffff;
+            padding: 8px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .cor-direita {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 180px;
+            height: 100%;
+            background: linear-gradient(to right, #ffffff, #ff9100, #0e6b21);
+        }
+
+        header * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .menu-esq {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .menu-esq img {
+            width: 45px;
+        }
+
+        .menu-esq a {
+            text-decoration: none;
+            font-size: 12px;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .menu-dir {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .icon {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+        }
+
+        .mensagem-site {
+            width: 100%;
+            background: #ffe4c2;
+            text-align: center;
+            padding: 12px;
+            font-size: 13px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .menu-navegacao {
+            width: 100%;
+            background: #e6e6e6;
+            padding: 20px 0;
+            margin-top: 25px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 35px;
+        }
+
+        .item-menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            font-size: 13px;
+            text-transform: lowercase;
+        }
+
+        .item-menu img {
+            width: 38px;
+            height: auto;
+            margin-bottom: 5px;
+        }
+
+        .container-cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .carditem {
+            width: 160px;
+            background: #f1f1f1;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            transition: 0.2s;
+        }
+
+        .carditem h1 {
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+
+        .carditem img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            display: block;
+            margin: 8px auto;
+            border-radius: 6px;
+        }
+
+        .carditem p {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .carditem:hover {
+            transform: scale(1.05);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="cor-direita"></div>
+
+        <div class="menu-esq">
+            <a href="inicial.html"><img
+                    src="https://i.ibb.co/Xxzqx6vL/Captura-de-tela-2025-12-02-182506-removebg-preview-removebg-preview.png"
+                    alt="Logo"></a>
+            <a href="loja.html">LOJA</a>
+            <a href="loja2.html">ORANGEPHONE</a>
+            <a href="loja3.html">SMARTORANGE</a>
+            <a href="loja4.html">ORANGEPODS</a>
+            <a href="referencias.html">REFERÊNCIAS</a>
+
+        </div>
+
+        <div class="menu-dir">
+            <a href="login.html">
+                <div class="icon">
+                    <img src="https://i.ibb.co/jP8FTKWy/3106921-removebg-preview.png">
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <div class="mensagem-site">
+        Está é a página de Loja / <strong>iOrange</strong>.
+    </div>
+
+    <nav class="menu-navegacao">
+
+        <a href="loja2.html" class="item-menu">
+            <img src="https://i.ibb.co/WNkBPCpC/41-9i-Alnot-S-AC-UF1000-1000-QL80-removebg-preview.png">
+            orangebok
+        </a>
+
+        <a href="loja.html" class="item-menu">
+            <img src="https://i.ibb.co/7tHJtCMZ/iphone-card-40-17pro-202509-FMT-WHH-removebg-preview.png">
+            orangephone
+        </a>
+
+        <a href="loja3.html" class="item-menu">
+            <img src="https://i.ibb.co/WNY9RRgs/61dnp-FIURh-L-removebg-preview.png">
+            smartorange
+        </a>
+
+        <a href="loja4.html" class="item-menu">
+            <img src="https://i.ibb.co/d0BR19gG/airpods-4-anc-select-202409-FMT-WHH-removebg-preview.png">
+            airorange
+        </a>
+
+        <a href="loja5.html" class="item-menu">
+            <img
+                src="https://i.ibb.co/M5gpnwPz/smart-air-tag-rastreador-gps-alarme-de-som-funciona-com-buscar-app-JYWX2-X6-removebg-preview.png">
+            airtag
+        </a>
+
+        <a href="loja6.html" class="item-menu">
+            <img src="https://i.ibb.co/B50vKmvL/165622-800-800-removebg-preview.png">
+            acessorios
+        </a>
+
+    </nav>
+
+    <div class="container-cards">
+
+        <div class="carditem">
+            <a href="comprabok1.html">
+                <h1>ORANGEBOOK 1S CINZA</h1>
+                <img src="https://i.ibb.co/LzRGk3wM/b9351a5d8902e673e7ba45d4d13acc8d-removebg-preview.png">
+                <p>R$ 25.500,00</p>
+            </a>
+        </div>
+
+        <div class="carditem">
+            <a href="comprabok2.html">
+                <h1>ORANGEBOOK 2S METALICO</h1>
+                <img src="https://i.ibb.co/7TkF50v/3cc5b3f8cae6504b5c9f60fe2ff0bfec-removebg-preview.png">
+                <p>R$ 25.500,00</p>
+            </a>
+        </div>
+
+        <div class="carditem">
+            <a href="comprabok3.html">
+                <h1>ORANGEBOOK 3S PRETO</h1>
+                <img src="https://i.ibb.co/xt3z8G6G/2ec1d7dcf8a2d4006c313482aca3452e-removebg-preview.png">
+                <p>R$ 25.500,00</p>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="container-cards">
+
+        <div class="carditem">
+            <a href="comprabok1.html">
+                <h1>ORANGEBOOK 1S CINZA</h1>
+                <img src="https://i.ibb.co/LzRGk3wM/b9351a5d8902e673e7ba45d4d13acc8d-removebg-preview.png">
+                <p>R$ 25.500,00</p>
+            </a>
+        </div>
+
+        <div class="carditem">
+            <a href="comprabok2.html">
+                <h1>ORANGEBOOK 2S METALICO</h1>
+                <img src="https://i.ibb.co/7TkF50v/3cc5b3f8cae6504b5c9f60fe2ff0bfec-removebg-preview.png">
+                <p>R$ 25.500,00</p>
+            </a>
+        </div>
+
+        <div class="carditem">
+            <a href="comprabok3.html">
+                <h1>ORANGEBOOK 3S PRETO</h1>
+                <img src="https://i.ibb.co/xt3z8G6G/2ec1d7dcf8a2d4006c313482aca3452e-removebg-preview.png">
+                <p>R$ 25.500,00</p>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
